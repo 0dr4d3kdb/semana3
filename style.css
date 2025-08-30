@@ -52,4 +52,59 @@ nav>a{
     width: 25vw;
 }
 
+#seccion1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
 
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0 2rem 0;
+}
+
+#plantas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    padding-bottom: 2rem;
+}
+
+.planta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+        url('plantabamboo.png') center/cover no-repeat,    /* la imagen primero */
+        linear-gradient(to bottom, transparent 50%, #f2f2f2 50%);
+    width: 280px;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: #f2f2f2;*/
+    border-radius: 20px;
+}
+
+#seccion2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    background-color: #005138;
+}
+
+#seccion2>p{
+    color: #fefefe;
+    font-size: 2rem;
+    padding-bottom: 5rem;
+}
