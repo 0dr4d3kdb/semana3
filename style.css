@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Serif+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
@@ -10,6 +15,15 @@ header{
     flex-direction: row;
     background-color: #00361C;
     height: 11vh;
+    width: 100%;
+}
+
+#contact>button{
+    background-color: #00bd69;
+    padding: .3rem .8rem;
+    color: #ffffff;
+    border-radius: 15px;
+    border: none;
 }
 
 #logo{
@@ -58,6 +72,7 @@ nav>a{
     align-items: center;
     flex-direction: column;
     padding-bottom: 5rem;
+    width: 100%;
 }
 
 #titulo{
@@ -66,6 +81,11 @@ nav>a{
     justify-content: center;
     flex-direction: column;
     padding: 5rem 0 2rem 0;
+}
+
+#titulo>h2{
+    font-family: Lato;
+    font-size: 2rem;
 }
 
 #plantas{
@@ -94,17 +114,98 @@ nav>a{
     border-radius: 20px;
 }
 
+.planta>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00c262;
+    border-radius: 50px;
+    border: solid #042609 2px;
+    color: #042609;
+}
+
+#buynow{
+    background-color: #ff6800;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+}
+
 #seccion2{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5rem;
+    padding: 5rem 0 5rem 0;
     background-color: #005138;
+    width: 100%;
 }
 
 #seccion2>p{
+    font-family: libertinus;
     color: #fefefe;
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding-bottom: 5rem;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 65vw;
+    row-gap: .7rem;
+}
+
+form>input{
+    background-color: #367661;
+    height: 3rem;
+    width: 65%;
+    border-radius: 10px;
+    border: none;
+    width: 70%;
+    padding-left: 1rem;
+    color: #ffffff;
+}
+
+input::placeholder{
+    color: #8bbfad;
+}
+
+form>button{
+    margin-top: .7rem;
+    width: 70%;
+    height: 3rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #f26200;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#fotoplanta{
+    background-image: url(plantagomero.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
