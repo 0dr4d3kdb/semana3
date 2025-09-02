@@ -45,12 +45,21 @@
         <p>Add new plant</p>
         <div id="formulario">
             <form action="">
-                <input type="text" placeholder="Nombre de la planta">
-                <input type="text" placeholder="Especie">
+                <input id="nombre" type="text" placeholder="Nombre de la planta">
+                <input id="especie" type="text" placeholder="Especie">
                 <input id="precio" type="text" placeholder="Valor">
-                <input type="text" placeholder="Cantidad">
-                <input type="text" placeholder="Frutal (Sí/No)">
-                <input type="text" placeholder="Venenosa (Sí/No)">
+                <input id="cantidad" type="text" placeholder="Cantidad">
+                <select name="frutal" id="frutalselect">
+                    <option value="seleccionar">Frutal (Sí/No)</option>
+                    <option value="frutalsi">Sí</option>
+                    <option value="frutalno">No</option>
+                </select>
+                <select name="veneno" id="venenoselect">
+                    <option value="seleccionar">Venenosa (Sí/No)</option>
+                    <option value="frutalsi">Sí</option>
+                    <option value="frutalno">No</option>
+                </select>
+                <p id="error">&nbsp;</p>
                 <button id="agregar">Agregar</button>
             </form>
             <div id="fotoplanta"></div>
